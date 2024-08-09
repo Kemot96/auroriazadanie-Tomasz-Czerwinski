@@ -1,0 +1,212 @@
+[
+    {
+        "id":1,
+        "email": "example@xx.pl",
+        "name": "Lukas",
+        "description": "perfect service",
+        "rate": 5,
+        "rate_date": "12.12.2023",
+        "verified": true,
+        "platform": {
+            "name": "Google",
+            "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "short_image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "url": "https://www.google.com",
+            "background_color": null
+        },
+        "images": [
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+            "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        ]
+    },
+    {
+        "id":2,
+        "email": "example@example.com",
+        "name": "John",
+        "description": "Great experience with the service!",
+        "rate": 4,
+        "rate_date": "15.12.2023",
+        "verified": false,
+        "platform": {
+          "name": "Facebook",
+          "image": "https://www.facebook.com/images/fb_icon_325x325.png",
+          "short_image": "https://www.facebook.com/images/fb_icon_325x325.png",
+          "url": "https://www.facebook.com",
+          "background_color": "#3b5998"
+        },
+        "images": [
+          "https://www.facebook.com/images/fb_icon_325x325.png",
+          "https://www.facebook.com/images/fb_icon_325x325.png",
+          "https://www.facebook.com/images/fb_icon_325x325.png"
+        ]
+      },
+      {
+        "id":3,
+        "email": "user123@example.com",
+        "name": "Anna",
+        "description": "Excellent service and fast delivery!",
+        "rate": 4.5,
+        "rate_date": "18.12.2023",
+        "verified": true,
+        "platform": {
+          "name": "Amazon",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+          "url": "https://www.amazon.com",
+          "background_color": "#FF9900"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
+        ]
+      },
+      {
+        "id":4,
+        "email": "customer456@example.com",
+        "name": "David",
+        "description": "Responsive customer support and high-quality products.",
+        "rate": 5,
+        "rate_date": "20.12.2023",
+        "verified": true,
+        "platform": {
+          "name": "Etsy",
+          "image": "https://www.etsy.com/assets/img/logos/logo-etsysocialmedia-big-1200x630.png",
+          "short_image": "https://www.etsy.com/assets/img/logos/logo-etsysocialmedia-big-1200x630.png",
+          "url": "https://www.etsy.com",
+          "background_color": "#D564BE"
+        },
+        "images": [
+          "https://www.etsy.com/assets/img/logos/logo-etsysocialmedia-big-1200x630.png",
+          "https://www.etsy.com/assets/img/logos/logo-etsysocialmedia-big-1200x630.png",
+          "https://www.etsy.com/assets/img/logos/logo-etsysocialmedia-big-1200x630.png"
+        ]
+      },
+      {
+        "id":5,
+        "email": "customer789@example.com",
+        "name": "Michael",
+        "description": "Top-notch products and quick shipping!",
+        "rate": 4.8,
+        "rate_date": "22.12.2023",
+        "verified": false,
+        "platform": {
+          "name": "Walmart",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png",
+          "url": "https://www.walmart.com",
+          "background_color": "#007DC6"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png"
+        ]
+      },
+      {
+        "id":6,
+        "email": "user101@example.com",
+        "name": "Sophia",
+        "description": "Great variety of products and easy navigation!",
+        "rate": 4.5,
+        "rate_date": "25.12.2023",
+        "verified": true,
+        "platform": {
+          "name": "eBay",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1280px-EBay_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1280px-EBay_logo.svg.png",
+          "url": "https://www.ebay.com",
+          "background_color": "#E53238"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1280px-EBay_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1280px-EBay_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1280px-EBay_logo.svg.png"
+        ]
+      },
+      {
+        "id":7,
+        "email": "user202@example.com",
+        "name": "Emily",
+        "description": "Highly recommended! Fast and secure transactions.",
+        "rate": 4.7,
+        "rate_date": "28.12.2023",
+        "verified": true,
+        "platform": {
+          "name": "Target",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1280px-Target_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1280px-Target_logo.svg.png",
+          "url": "https://www.target.com",
+          "background_color": "#CC0000"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1280px-Target_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1280px-Target_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1280px-Target_logo.svg.png"
+        ]
+      },
+      {
+        "id":8,
+        "email": "customer303@example.com",
+        "name": "Daniel",
+        "description": "Amazing products and excellent customer service!",
+        "rate": 5,
+        "rate_date": "30.12.2023",
+        "verified": true,
+        "platform": {
+          "name": "Best Buy",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Best_Buy_logo.svg/1280px-Best_Buy_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Best_Buy_logo.svg/1280px-Best_Buy_logo.svg.png",
+          "url": "https://www.bestbuy.com",
+          "background_color": "#003B64"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Best_Buy_logo.svg/1280px-Best_Buy_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Best_Buy_logo.svg/1280px-Best_Buy_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Best_Buy_logo.svg/1280px-Best_Buy_logo.svg.png"
+        ]
+      },
+      {
+        "id":9,
+        "email": "user404@example.com",
+        "name": "Olivia",
+        "description": "Efficient shipping and great quality products!",
+        "rate": 4.9,
+        "rate_date": "02.01.2024",
+        "verified": false,
+        "platform": {
+          "name": "Shopify",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Shopify_logo.svg/1280px-Shopify_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Shopify_logo.svg/1280px-Shopify_logo.svg.png",
+          "url": "https://www.shopify.com",
+          "background_color": "#96BF48"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Shopify_logo.svg/1280px-Shopify_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Shopify_logo.svg/1280px-Shopify_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Shopify_logo.svg/1280px-Shopify_logo.svg.png"
+        ]
+      },
+      {
+        "id":10,
+        "email": "customer505@example.com",
+        "name": "Mia",
+        "description": "Satisfied with the product quality and service!",
+        "rate": 4.5,
+        "rate_date": "05.01.2024",
+        "verified": true,
+        "platform": {
+          "name": "Alibaba",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Alibaba.com_logo.svg/1280px-Alibaba.com_logo.svg.png",
+          "short_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Alibaba.com_logo.svg/1280px-Alibaba.com_logo.svg.png",
+          "url": "https://www.alibaba.com",
+          "background_color": "#FF6600"
+        },
+        "images": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Alibaba.com_logo.svg/1280px-Alibaba.com_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Alibaba.com_logo.svg/1280px-Alibaba.com_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Alibaba.com_logo.svg/1280px-Alibaba.com_logo.svg.png"
+        ]
+      }
+]
