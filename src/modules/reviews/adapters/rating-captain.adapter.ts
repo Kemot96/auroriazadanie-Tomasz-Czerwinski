@@ -1,5 +1,9 @@
 import { Injectable } from "@nestjs/common";
-import { PaginatedRequest, PaginatedType } from "../domain/reviews.types";
+import {
+  PaginatedRequest,
+  PaginatedType,
+  GetSingleReviewRequest,
+} from "../domain/reviews.types";
 import { RatingCaptainMapper } from "./rating-captain.mapper";
 import { RatingCaptainPort } from "./rating-captain.port";
 import { ReviewEntity } from "../domain/reviews.entity";
@@ -23,6 +27,13 @@ export class RatingCaptainAdapter implements RatingCaptainPort {
     }; // TODO: implement this, simulate paginated response from external API
     const reviews = this.mapper.reviewsToDomain(data); //TODO: implement this, map data to domain, use mapper
     return reviews;
+  }
+
+  async getReview(request: GetSingleReviewRequest): Promise<ReviewEntity> {
+    const { id } = request;
+    const data = EXTERNAL_DATA.find((data) => data.id === id);
+    const review = this.mapper.reviewToDomain(data);
+    return review;
   }
 
   async count(): Promise<number> {

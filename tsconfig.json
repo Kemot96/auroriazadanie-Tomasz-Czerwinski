@@ -17,6 +17,6 @@
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "./"
   }
 }

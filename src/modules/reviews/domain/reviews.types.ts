@@ -24,7 +24,7 @@ export interface ReviewExternalRecord {
   name: string;
   description: string;
   rate: number;
-  rate_date: string; //maybe Date instead
+  rate_date: string;
   verified: boolean;
   platform: {
     name: string;
@@ -54,4 +54,7 @@ export interface PaginatedType<T> {
   page: number;
   per_page: number;
   total: number;
+}
+export interface GetSingleReviewRequest {
+  id: number;
 }

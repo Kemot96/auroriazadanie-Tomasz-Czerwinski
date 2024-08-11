@@ -39,4 +39,17 @@ export class RatingCaptainMapper {
 
     return domain;
   }
+
+  reviewToDomain(review: ReviewExternalRecord): ReviewEntity {
+    return new ReviewEntity({
+      id: review.id,
+      email: review.email,
+      name: review.name,
+      description: review.description,
+      rating: review.rate,
+      rate_date: new Date(review.rate_date),
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    });
+  }
 }
