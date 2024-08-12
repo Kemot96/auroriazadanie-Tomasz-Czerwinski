@@ -41,13 +41,15 @@ export class RatingCaptainMapper {
   }
 
   reviewToDomain(review: ReviewExternalRecord): ReviewEntity {
+    const [day, month, year] = review.rate_date.split(".");
+    const rate_date = new Date(+year, +month - 1, +day, 12); //TODO make helper function for this
     return new ReviewEntity({
       id: review.id,
       email: review.email,
       name: review.name,
       description: review.description,
       rating: review.rate,
-      rate_date: new Date(review.rate_date),
+      rate_date: new Date(rate_date),
       createdAt: new Date(),
       updatedAt: new Date(),
     });
