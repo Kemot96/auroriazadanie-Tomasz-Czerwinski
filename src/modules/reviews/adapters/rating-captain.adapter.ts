@@ -3,6 +3,8 @@ import {
   PaginatedRequest,
   PaginatedType,
   GetSingleReviewRequest,
+  ExternalPaginatedType,
+  ReviewExternalRecord,
 } from "../domain/reviews.types";
 import { RatingCaptainMapper } from "./rating-captain.mapper";
 import { RatingCaptainPort } from "./rating-captain.port";
@@ -19,7 +21,7 @@ export class RatingCaptainAdapter implements RatingCaptainPort {
     const { page, per_page } = paginated;
     const offset = per_page * (page - 1);
     const count = await this.count();
-    const data = {
+    const data: ExternalPaginatedType<ReviewExternalRecord> = {
       data: EXTERNAL_DATA.slice(offset, offset + per_page),
       current_page: page,
       per_page: per_page,
@@ -31,7 +33,9 @@ export class RatingCaptainAdapter implements RatingCaptainPort {
 
   async getReview(request: GetSingleReviewRequest): Promise<ReviewEntity> {
     const { id } = request;
-    const data = EXTERNAL_DATA.find((data) => data.id === id);
+    const data: ReviewExternalRecord = EXTERNAL_DATA.find(
+      (data) => data.id === id
+    );
     const review = this.mapper.reviewToDomain(data);
     return review;
   }
