@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   label: {
     type: String,
@@ -14,7 +14,7 @@ const props = defineProps({
   },
 });
 
-let cssStyles = "cursor-pointer border-b-2 w-52 text-center";
+let cssStyles: string = "cursor-pointer border-b-2 w-52 text-center";
 if (props.currentRoute) {
   cssStyles += " border-y-amber-600";
 } else {

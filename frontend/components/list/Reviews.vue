@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   reviews: {
-    type: Array,
+    type: Array<ReviewEntityInterface>,
     required: true,
   },
 });

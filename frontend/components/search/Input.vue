@@ -1,6 +1,6 @@
-<script setup>
+<script setup lang="ts">
 const reviewID = ref("");
-const review = useState('review');
+const review: Ref<ReviewEntityInterface> | Ref<null> | Ref<undefined> = useState('review');
 
 const query = gql`
 query getReview($params: GetReviewRequestDto!) {
@@ -18,13 +18,13 @@ query getReview($params: GetReviewRequestDto!) {
 }
 `;
 
-async function findReview() {
+async function findReview(): Promise<void> {
     if (reviewID.value.trim() !== '') {
-        const { data } = await useAsyncQuery(query, { params: { id: Number(reviewID.value) } });
+        const { data }: { data: Ref<QueryResponse> } = await useAsyncQuery(query, { params: { id: Number(reviewID.value) } });
         const response = data?.value?.getReview;
 
         if (response) {
-            review.value = reviewsMapper(response);
+            [review.value] = reviewsMapper(response);
         }
         else {
             review.value = null;

@@ -1,5 +1,6 @@
-<script setup>
-const review = useState("review", () => {});
+<script setup lang="ts">
+const review: Ref<ReviewEntityInterface> | Ref<null> | Ref<undefined> =
+  useState("review", () => undefined);
 </script>
 
 <template>

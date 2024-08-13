@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
     maxPage: {
       type: Number,
@@ -6,7 +6,7 @@ const props = defineProps({
     },
   });
 
-const currentPage = useState('currentPage');
+const currentPage: globalThis.Ref<number> = useState('currentPage');
 
 const previousPageLabel = "< poprzednia strona";
 const nextPageLabel = "następna strona >";

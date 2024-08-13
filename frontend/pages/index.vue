@@ -1,5 +1,5 @@
-<script setup>
-const PER_PAGE = 3;
+<script setup lang="ts">
+const PER_PAGE: number = 3;
 const currentPage = useState("currentPage", () => 1);
 
 const query = gql`
@@ -23,7 +23,7 @@ const query = gql`
 `;
 
 let total = ref(0);
-let reviews = ref([]);
+let reviews: Ref<ReviewEntityInterface[]> = ref([]);
 
 const maxPage = computed(() => {
   return Math.ceil(total.value / PER_PAGE);
@@ -40,10 +40,13 @@ watch(currentPage, () => {
   fetchReviews();
 });
 
-async function fetchReviews() {
-  const { data } = await useAsyncQuery(query, { params });
+async function fetchReviews(): Promise<void> {
+  const { data }: { data: Ref<QueryResponse> } = await useAsyncQuery(query, {
+    params,
+  });
+  const response: PaginatedType<ReviewEntityInterface> | undefined =
+    data?.value?.getAllReviews;
 
-  const response = data?.value?.getAllReviews;
   if (response) {
     total.value = response.total;
     reviews.value = reviewsMapper(response.data);

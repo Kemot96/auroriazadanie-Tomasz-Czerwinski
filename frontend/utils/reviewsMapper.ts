@@ -1,5 +1,7 @@
-export default function reviewsMapper(data) {
-  const mapReview = (review) => ({
+export default function reviewsMapper(
+  data: ReviewEntityInterface | ReviewEntityInterface[]
+): ReviewEntityInterface[] {
+  const mapReview = (review: ReviewEntityInterface) => ({
     id: review.id,
     email: review.email,
     name: review.name,
@@ -10,5 +12,7 @@ export default function reviewsMapper(data) {
     updatedAt: formatDateToString(new Date(review.updatedAt)),
   });
 
-  return Array.isArray(data) ? data.map(mapReview) : mapReview(data);
+  const reviewsArray = Array.isArray(data) ? data : [data];
+
+  return reviewsArray.map(mapReview);
 }
