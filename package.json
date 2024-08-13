@@ -20,7 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "generate": "npx prisma generate",
     "migrate": "npx prisma migrate dev",
-    "dev": "cd frontend && npm run dev"
+    "dev": "cd frontend && npm run dev",
+    "install-all": "npm install && cd frontend && npm install"
   },
   "dependencies": {
     "@apollo/subgraph": "^2.4.7",

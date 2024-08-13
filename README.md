@@ -1,5 +1,13 @@
 # Zadanie rekrutacyjne: Junior Full-Stack TypeScript Developer - Auroria
 
+## Instalacja paczek
+
+```bash
+npm run install-all
+```
+
+Powyższe polecenie zainstaluje paczki dla projektu backendowego Nest i frontendowego Nuxt
+
 ## Uruchomienie
 
 ```bash
