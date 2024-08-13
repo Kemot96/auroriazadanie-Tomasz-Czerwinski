@@ -80,35 +80,35 @@ describe("GraphQL AppResolver (e2e) {Supertest}", () => {
             });
           });
       });
-      describe("review", () => {
-        it("should return review", () => {
-          return request(app.getHttpServer())
-            .post(gql)
-            .send({
-              query: `
-                  query getReview($params: GetReviewRequestDto!) {
-                    getReview(params: $params) {
-                      id
-                      email
-                      name
-                    }
+    });
+    describe("review", () => {
+      it("should return review", () => {
+        return request(app.getHttpServer())
+          .post(gql)
+          .send({
+            query: `
+                query getReview($params: GetReviewRequestDto!) {
+                  getReview(params: $params) {
+                    id
+                    email
+                    name
                   }
-                `,
-              variables: {
-                params: {
-                  id: 1,
-                },
-              },
-            })
-            .expect(200)
-            .expect((res) => {
-              expect(res.body.data.getReview).toEqual({
+                }
+              `,
+            variables: {
+              params: {
                 id: 1,
-                email: "example@xx.pl",
-                name: "Lukas",
-              });
+              },
+            },
+          })
+          .expect(200)
+          .expect((res) => {
+            expect(res.body.data.getReview).toEqual({
+              id: 1,
+              email: "example@xx.pl",
+              name: "Lukas",
             });
-        });
+          });
       });
     });
   });
