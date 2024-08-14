@@ -23,3 +23,7 @@ npm run test
 # testy e2e
 npm run test:e2e
 ```
+
+Backend: http://localhost:3306/graphql
+
+Frontend: http://localhost:3000/
